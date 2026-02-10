@@ -1,0 +1,19 @@
+#backgroundimg,
+#backgroundimg img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#backgroundimg {
+    overflow: hidden;
+    z-index: -1;
+}
+
+#backgroundimg img {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}

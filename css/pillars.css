@@ -1,0 +1,35 @@
+.pillar {
+    position: absolute;
+    width: 80px;
+    background: #2ecc71;
+    box-shadow: inset -6px 0 8px rgba(0, 0, 0, 0.35);
+    overflow: visible;
+}
+
+.pillar::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(to right,
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35) 3px,
+            transparent 3px,
+            transparent 14px);
+}
+
+.pillar-cap {
+    position: absolute;
+    width: 120px;
+    height: 26px;
+    left: -20px;
+    background: #27ae60;
+    border-radius: 10px;
+    box-shadow:
+        inset -5px 0 6px rgba(0, 0, 0, 0.35),
+        0 3px 4px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+.pillar.top {
+    transform: scaleY(-1);
+}

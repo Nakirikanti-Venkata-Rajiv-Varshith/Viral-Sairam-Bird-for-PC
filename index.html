@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FappyBird_isnpiration_SAIRAM BIRD</title>
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/background.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/game_container.css">
+  <link rel="stylesheet" href="./css/clouds.css">
+  <link rel="stylesheet" href="./css/bird.css">
+  <link rel="stylesheet" href="./css/pillars.css">
+  <link rel="stylesheet" href="./css/gameover.css">
+
+</head>
+
+<body>
+
+
+  <nav id="navbar">
+    <h1 id="title">SAI RAM BIRD</h1>
+    <div id="live-score">Score: 0</div>
+  </nav>
+
+  <div id="backgroundimg">
+    <img src="./assets/images/background.png" alt="image">
+  </div>
+  <div id="game-container">
+
+
+    <div class="cloud" style="width:120px;height:40px;top:10%;"></div>
+    <div class="cloud" style="width:180px;height:55px;top:35%;"></div>
+    <div class="cloud" style="width:180px;height:55px;top:35%;"></div>
+
+    <div id="game-over" style="display:none;">
+      <div class="game-over-box">
+        <div class="game-over-text">GAME OVER</div>
+        <div id="final-score">Score: 0</div>
+      </div>
+    </div>
+
+    <div id="bird">
+      <div class="bird-body">
+        <div class="eye"></div>
+        <div class="beak"></div>
+        <div class="wing"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module" src="./javascript/main.js"></script>
+</body>
+
+</html>

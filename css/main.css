@@ -1,0 +1,24 @@
+/* GLOBAL RESET + BASE */
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Disable text selection & right-click selection inside game */
+
+#game-container,
+#game-container * {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
+
+/* Disable double-tap zoom & gestures inside the game */
+#game-container {
+    touch-action: manipulation;
+}
