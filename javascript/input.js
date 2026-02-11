@@ -1,5 +1,5 @@
 import { flap } from "./bird.js";
-import { flapSound } from "./audio.js";
+import { playFlapSound } from "./audio.js";
 
 document.addEventListener("contextmenu", e => e.preventDefault());
 
@@ -13,13 +13,9 @@ function unlockAudio() {
 
   if (audioUnlocked) return;
 
-  flapSound.play()
-    .then(() => {
-      flapSound.pause();
-      flapSound.currentTime = 0;
-      audioUnlocked = true;
-    })
-    .catch(()=>{});
+  playFlapSound();
+
+  audioUnlocked = true;
 }
 
 document.addEventListener("keydown", (e) => {

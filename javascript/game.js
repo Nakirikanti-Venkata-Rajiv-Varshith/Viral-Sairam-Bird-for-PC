@@ -3,8 +3,6 @@ import { updateBird } from "./bird.js";
 import { crashSound, nearSound } from "./audio.js";
 
 
-
-
 export function gameLoop() {
 
     if (!state.gameRunning) return;
@@ -26,7 +24,7 @@ export function gameLoop() {
         const bottomRect = p.bottom.getBoundingClientRect();
 
 
-        const nearDistance = state.gap * 0.23;
+        const nearDistance = state.gap * 0.22;
 
         const birdRect = state.birdRectCached || state.bird.getBoundingClientRect();
 

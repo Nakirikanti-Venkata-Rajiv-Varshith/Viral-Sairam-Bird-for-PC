@@ -1,5 +1,5 @@
 import { state } from "./state.js";
-import { flapSound } from "./audio.js";
+import { playFlapSound } from "./audio.js";
 import { endGame } from "./game.js";
 
 export function flap() {
@@ -7,14 +7,8 @@ export function flap() {
     if (!state.gameRunning) return;
 
     state.velocity = -7;
-
-    if (!state.audioUnlocked) {
-        flapSound.play().catch(()=>{});
-        state.audioUnlocked = true;
-    }
-
-    flapSound.currentTime = 0;
-    flapSound.play().catch(()=>{});
+    
+    playFlapSound(); 
 }
 
 export function updateBird() {

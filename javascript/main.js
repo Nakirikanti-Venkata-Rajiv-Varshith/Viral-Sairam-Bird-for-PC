@@ -16,7 +16,4 @@ state.gameOverBanner.addEventListener("click", () => {
     }
 });
 
-
-
-
 startGame();

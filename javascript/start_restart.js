@@ -25,7 +25,6 @@ export function startGame(){
     state.liveScoreEl.innerText =
    "Score: 0 | Highest Score: " + state.highestScore;
 
-
     createPillars();
     state.pillarSpawnerId=setInterval(createPillars,1800);
 
