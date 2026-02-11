@@ -1,4 +1,4 @@
-# Viral Sai Ram Bird
+# Viral Sai Ram Bird (pc only)
 
 A Flappy Bird–style browser game built with modular JavaScript architecture and a custom game loop.
 
